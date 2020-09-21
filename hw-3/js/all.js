@@ -56,15 +56,29 @@ document.write(str)
 var a = parseInt(prompt('Enter number'));
 var b = parseInt(prompt('Enter number'));
 function avg2() {
-return alert((a+b)/2);
+return (a+b)/2;
 }
-avg2()
+alert(avg2());
+
 
 
 var a = Number(prompt('Enter number'));;
 var b = Number(prompt('Enter number'));;
 var c = Number(prompt('Enter number'));;
 function sum3() {
-return alert(a+b+c);
+return a+b+c;
 }
-sum3()
+alert(sum3());
+
+
+function sum(...arguments) {
+    let sum = +prompt('enter');
+    
+    for (let num of arguments) {
+        num = parseInt(num);
+        sum += num;
+    } 
+ 
+    return console.log(sum);
+}
+sum('2', '3', '6');
